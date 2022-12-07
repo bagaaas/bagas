@@ -1,0 +1,41 @@
+public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int beratbadan;
+        double tinggibadan;
+        double bmi;
+         
+       
+        System.out.print("Masukkan tinggi badan dalam CM: ");
+        tinggibadan = in.nextDouble();
+        System.out.print("Masukkan berat badan dalam KG: ");
+        beratbadan = in.nextInt();
+         tinggibadan = tinggibadan/100;
+        bmi = beratbadan/(tinggibadan*tinggibadan);
+        System.out.println("");
+        System.out.println("Index BMI anda \t: "+bmi);
+        System.out.println("");
+         
+
+        if(bmi<18.5){
+            System.out.println("anda kurus");
+        }
+        else if(bmi>18.5 && bmi<22.9){
+            System.out.println("berat badan anda normal");
+        }
+        else if(bmi>23 && bmi<24.9){
+            System.out.println("anda kelebihan berat badan");
+        }
+        else if(bmi>25 && bmi<29.9){
+            System.out.println("anda overweigth");
+        }
+        else if(bmi>30){
+            System.out.println("anda obesitas");
+        }
+        else {
+            System.out.println("maaf pilihan berat tidak ada");
+        }
+        System.out.println("");
+
+    }
+}
+    
